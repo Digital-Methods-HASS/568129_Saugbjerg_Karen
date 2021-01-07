@@ -1,0 +1,169 @@
+[
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Voyage itinerary imputed port where began (ptdepimp) place",
+    "newColumnName": "departure",
+    "description": "Rename column Voyage itinerary imputed port where began (ptdepimp) place to departure"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Voyage itinerary imputed principal place of slave purchase (mjbyptimp)",
+    "newColumnName": "purchase",
+    "description": "Rename column Voyage itinerary imputed principal place of slave purchase (mjbyptimp) to purchase"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Voyage itinerary imputed principal port of slave disembarkation (mjslptimp) place",
+    "newColumnName": "arrival",
+    "description": "Rename column Voyage itinerary imputed principal port of slave disembarkation (mjslptimp) place to arrival"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Total embarked",
+    "newColumnName": "embarked",
+    "description": "Rename column Total embarked to embarked"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Total disembarked",
+    "newColumnName": "disembarked",
+    "description": "Rename column Total disembarked to disembarked"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Year of arrival at port of disembarkation",
+    "newColumnName": "year",
+    "description": "Rename column Year of arrival at port of disembarkation to year"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Voyage ID",
+    "newColumnName": "voyageid",
+    "description": "Rename column Voyage ID to voyageid"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "purchase",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "NA"
+      }
+    ],
+    "description": "Mass edit cells in column purchase"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "arrival",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "???"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NA"
+      }
+    ],
+    "description": "Mass edit cells in column arrival"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "arrival",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "NA"
+      }
+    ],
+    "description": "Mass edit cells in column arrival"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "embarked",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "NA"
+      }
+    ],
+    "description": "Mass edit cells in column embarked"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "disembarked",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "NA"
+      }
+    ],
+    "description": "Mass edit cells in column disembarked"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "purchase",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Calabar",
+          "Calabary"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Calabar"
+      }
+    ],
+    "description": "Mass edit cells in column purchase"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "year",
+    "index": 5,
+    "description": "Move column year to position 5"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "year",
+    "index": 4,
+    "description": "Move column year to position 4"
+  }
+]
