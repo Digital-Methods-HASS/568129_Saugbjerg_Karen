@@ -30,7 +30,8 @@ RStudio (version 1.3.1093) (packages: tidyverse, cowplot)
 
 Data:
 
-The Trans-Atlantic Slave Trade database, available at https://www.slavevoyages.org/voyage/database. Columns are set to ‘Voyage ID’, ‘Place where voyage began’, ‘Principal place of purchase’, ‘Principal place of slave landing’, ‘Total embarked’, ‘Total disembarked’, and ‘Year arrived with slaves’. Itinerary is filtered to ‘Departure - Europe’. Data are downloaded as xls file (see "slavevoyages_original.xls" in Data attached), cleansed in OpenRefine (see Operation History attached), extracted as csv file (see "slavevoyages_clean.csv" in Data attached), and read into RStudio.
+The Trans-Atlantic Slave Trade database, available at https://www.slavevoyages.org/voyage/database. For conditions of use for Slave Voyages dataset, see https://www.slavevoyages.org/about/about#legal/9/en/.
+Columns are set to ‘Voyage ID’, ‘Place where voyage began’, ‘Principal place of purchase’, ‘Principal place of slave landing’, ‘Total embarked’, ‘Total disembarked’, and ‘Year arrived with slaves’. Itinerary is filtered to ‘Departure - Europe’. Data are downloaded as xls file (see "slavevoyages_original.xls" in Data attached), cleansed in OpenRefine (see Operation History attached), extracted as csv file (see "slavevoyages_clean.csv" in Data attached), and read into RStudio.
 
 
 
