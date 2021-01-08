@@ -26,7 +26,7 @@ voyages %>%
   mutate(departure = reorder(departure,n)) %>%
   ggplot(aes(x = n, y = departure))+
   geom_col()+
-  labs(title = "25 most frequent points of departure", x = "Number of voyages", y = "Departure points")
+  labs(title = "25 most frequent points of departure during the entire period", x = "Number of voyages", y = "Departure points")
 
 # Visualizing annual number of voyages for top 10 most frequent departure points in 16th century
 departure10in16th <- voyages %>% 
